@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AddMaster.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="20, 40, 20, 20">
+            
+            <Label Text="First Number"></Label>
+            <Entry x:Name="txtFirstNumber" Keyboard="Numeric"></Entry>
+            
+            <Label Text="Second Number"></Label>
+            <Entry x:Name="txtSecondNumber" Keyboard="Numeric"></Entry>
+            
+            <Label x:Name="lblDisplay" Text="0" HorizontalOptions="Center" FontSize="Large" Margin="0, 50"></Label>
+            
+            <Button Text="Add" Clicked="Add_OnClicked"></Button>
+            <Button Text="CLear" Clicked="Clear_OnClicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
